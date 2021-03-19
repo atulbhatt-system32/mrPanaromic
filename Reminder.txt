@@ -1,0 +1,5 @@
+  * name can no longer contain capital letters in REACT project
+  Efficiency Tricks
+
+  Use Tab while doing cd in terminal for auto complete
+  

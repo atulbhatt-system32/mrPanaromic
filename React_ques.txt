@@ -1,0 +1,3 @@
+Which is the first file that runs when we start the React server or run the command npm start or if using yarn then yarn start?
+Answer: index.js
+App.js is imported inside the index.js
