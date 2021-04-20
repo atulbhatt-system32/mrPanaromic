@@ -2,4 +2,12 @@
   Efficiency Tricks
 
   Use Tab while doing cd in terminal for auto complete
+
+  fonts used:
+
+  Poppins
+
+  Libraries Used:
+
+  npm install react-spring
   

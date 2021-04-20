@@ -18,10 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* color:#14b1ff; */
-  font-family: 'Comfortaa', cursive;
-  font-family: 'Dosis', sans-serif;
-  font-family: 'Kreon', serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
