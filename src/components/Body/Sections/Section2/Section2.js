@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./assets/css/section2.css";
 import axios from "axios";
 
-import DevDotTo from "react-devdotto";
 
 export default function Section1() {
   const [blogs, setBlogs] = useState([]);
