@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   color:white;
-  background-color: #000000;
+  background-color: rgb(6, 36, 37);
 
 }
 
@@ -19,6 +19,17 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active{
+  color: inherit;
+}
+
+
 
 
 

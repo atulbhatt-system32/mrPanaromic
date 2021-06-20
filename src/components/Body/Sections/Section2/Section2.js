@@ -13,6 +13,17 @@ export default function Section1() {
       .get("https://dev.to/api/articles?username=atulbhattsystem32")
       .then(function (response) {
         setBlogs(response.data);
+        setLoading(false);
+      });
+    axios
+      .get("https://dev.to/api/followers/users",{
+          headers:{
+            'api-key': `ARvenLzGRFAVNAcSTSkEQQT3`,
+            "Access-Control-Allow-Origin":"*"
+          }
+      })
+      .then(function (response) {
+        setBlogs(response.data);
         console.log(response.data);
         setLoading(false);
       });
@@ -23,7 +34,8 @@ export default function Section1() {
       {!loading
         ? blogs.map((blog) => {
             return (
-              <div className="blog-card">
+              <a href = {blog.canonical_url} target = "blank">
+              <div className="blog-card" title={blog.title}>
                 <picture>
                   <img src={blog.cover_image} alt="cover_iamge" />
                 </picture>
@@ -67,6 +79,7 @@ export default function Section1() {
                     <span className = "postreadtime" title = "reading time">{blog.reading_time_minutes} min read</span>
                 </div>
               </div>
+              </a>
             );
           })
         : "Loading...."}
