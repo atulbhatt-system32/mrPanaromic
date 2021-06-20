@@ -1,7 +1,10 @@
 .section1{
     width: 100%;
-    height:50%;
-    padding: 5%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -14,6 +17,10 @@
 .intro{
     font-size: 7rem;
     margin-right: 1rem;
+}
+
+.name{
+    cursor:pointer
 }
 
 .text-color-red{
@@ -32,11 +39,6 @@
 
 @media only screen and (max-width: 768px),(max-width: 823px) {
     /* For mobile phones: */
-    .body {
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-    
     .me-container{
         flex-direction:column;
         align-items:center;

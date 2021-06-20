@@ -43,7 +43,7 @@ export default function Section1() {
             animate="visible"
             transition={{ duration: 2.5 }}
             variants={variants}
-            className="intro text-color-red"
+            className="intro name text-color-red"
             whileHover={{ scale: 1.2, duration: 1.5 }}
           >
             Atul.

@@ -15,22 +15,12 @@ export default function Section1() {
         setBlogs(response.data);
         setLoading(false);
       });
-    axios
-      .get("https://dev.to/api/followers/users",{
-          headers:{
-            'api-key': `ARvenLzGRFAVNAcSTSkEQQT3`,
-            "Access-Control-Allow-Origin":"*"
-          }
-      })
-      .then(function (response) {
-        setBlogs(response.data);
-        console.log(response.data);
-        setLoading(false);
-      });
   }, []);
 
   return (
     <div className="section2">
+    <h2>I do blogging.</h2>
+    <div className="content">
       {!loading
         ? blogs.map((blog) => {
             return (
@@ -83,6 +73,7 @@ export default function Section1() {
             );
           })
         : "Loading...."}
+        </div>
     </div>
   );
 }
