@@ -28,7 +28,8 @@ export default function Section1() {
                 <picture>
                   <img src={blog.cover_image} alt="cover_iamge" />
                 </picture>
-                <h2>{blog.title.slice(0, 25)}...</h2>
+                <div class="text-content">
+                <h2>{blog.title}...</h2>
                 <div className="post-stats">
                   <div className="icon-stat">
                     <svg
@@ -66,6 +67,7 @@ export default function Section1() {
                   </div>
                     <span className = "postdate" title = "published date">{blog.readable_publish_date}</span>
                     <span className = "postreadtime" title = "reading time">{blog.reading_time_minutes} min read</span>
+                </div>
                 </div>
               </div>
             );
