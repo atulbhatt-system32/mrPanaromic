@@ -7926,6 +7926,11 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
+page-flip@latest:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/page-flip/-/page-flip-2.0.7.tgz#b6eaf9dac78fd1dceeb7cb4d0e2eeb203591ea1e"
+  integrity sha512-96lQFUUz7r/LZzEUZJ3yBIMEKU9+m8HMFDzTvTdD6P7Ag/wXINjp9n0W7b4wanwnDbQETo4uNUoL3zMqpFxwGA==
+
 pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
@@ -9145,7 +9150,7 @@ react-devdotto@^1.2.9:
   resolved "https://registry.yarnpkg.com/react-devdotto/-/react-devdotto-1.2.9.tgz#bb50d506e9cc07e285127b3470b4d23fb3b58479"
   integrity sha512-Uo7KW7FSv3MxPouR7FeP9iSwoHut8T9B5GWWB3DzbNMvZK246o9jNAzjxLr8uZz111rZaoV9YQFT+Oj05fFWXQ==
 
-react-dom@^16.13.1:
+react-dom@^16.13.1, react-dom@^16.8.4:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
   integrity sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==
@@ -9169,6 +9174,15 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
+react-flip-page@^1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/react-flip-page/-/react-flip-page-1.6.4.tgz#9bf7828299e46122ca2024b945dc14f40fb7b3db"
+  integrity sha512-8FFyFdcVgT1B6nsGB4WewcooTFEz/WHXVHzFdrgN66bD+4njwjwD6b/sL+fkwlou///bNeQsIv7q9rZ5y8Soxg==
+  dependencies:
+    prop-types "^15.6.2"
+    react "^16.8.4"
+    react-dom "^16.8.4"
+
 react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -9190,6 +9204,13 @@ react-page-scroller@^2.1.0:
   integrity sha512-o953DW7/q4kn/VONlzpZTJKBdfSZMPlF1EciOXgsfrl2vhQpO4buDzaVFTVUP+R2YQ9m1W51hGT+Aro8qqW7CA==
   dependencies:
     babel-polyfill "^6.26.0"
+
+react-pageflip@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-pageflip/-/react-pageflip-2.0.3.tgz#b7b8ff3cab77fc749c27f43362a35f7a59aabbbd"
+  integrity sha512-k81mHhRvUM52y8jyzTCh5t4O0lepkLhp+XGSUzq2C3uD+iW99Cv0jfRlqFCjZbD5N3jKkIFr7/3giucoXKDP3Q==
+  dependencies:
+    page-flip latest
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -9282,7 +9303,7 @@ react-spring@^9.0.0:
     "@react-spring/web" "^9.0.0"
     "@react-spring/zdog" "^9.0.0"
 
-react@^16.13.1:
+react@^16.13.1, react@^16.8.4:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==

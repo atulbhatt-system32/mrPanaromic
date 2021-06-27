@@ -24,8 +24,7 @@ export default function Section1() {
       {!loading
         ? blogs.map((blog) => {
             return (
-              <a href = {blog.canonical_url} target = "blank">
-              <div className="blog-card" title={blog.title}>
+              <div className="blog-card" title={blog.title} onClick={()=>window.open(blog.canonical_url,"_blank")}>
                 <picture>
                   <img src={blog.cover_image} alt="cover_iamge" />
                 </picture>
@@ -69,7 +68,6 @@ export default function Section1() {
                     <span className = "postreadtime" title = "reading time">{blog.reading_time_minutes} min read</span>
                 </div>
               </div>
-              </a>
             );
           })
         : "Loading...."}

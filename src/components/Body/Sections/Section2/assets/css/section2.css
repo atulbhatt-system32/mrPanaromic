@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-.blog-card{
+.content>a ,.blog-card{
     border: 2px solid rgb(253, 190, 190);
     border-radius: 7px;
     margin: 10px 10px;
@@ -59,9 +59,9 @@ picture > img{
         font-size: 3rem;
     }
 
-    .content{
+    /* .content{
         overflow-x: scroll;
-    }
+    } */
     .content > a{
         width: 100%;
         padding: 2rem;

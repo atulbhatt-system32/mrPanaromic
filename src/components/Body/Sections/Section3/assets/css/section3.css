@@ -32,4 +32,13 @@
     .value{
         font-size: 1rem;
     }
+
+    .bigCard{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .card-margin{
+        margin: 1rem;
+    }
 }
