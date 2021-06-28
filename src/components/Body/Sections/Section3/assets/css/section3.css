@@ -26,6 +26,10 @@
 
 @media only screen and (max-width: 768px),(max-width: 823px) {
     /* For mobile phones: */
+
+    .content{
+        width: unset;
+    }
     .section3 > h2{
         font-size: 3rem;
     }

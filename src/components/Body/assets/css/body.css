@@ -7,7 +7,6 @@
     color:#ffffff;
     overflow: scroll;
     height: 100vh;
-    scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
@@ -16,6 +15,7 @@
     height: 100vh;
     scroll-snap-align: start;
     position: relative;
+    padding: 2rem;
 }
 
 

@@ -19,7 +19,7 @@ export default function Section1() {
   return (
     <section className="section2">
       <h2>I do blogging.</h2>
-      <div className="content">
+      <div className="section2-content">
         {!loading
           ? blogs.map((blog) => {
               return (

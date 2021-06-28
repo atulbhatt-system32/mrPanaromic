@@ -3,20 +3,23 @@
     min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     flex-direction: column;
     background-color:rgb(5, 27, 46);
+    
 }
 
 .section2 > h2{
     font-size: 6rem;
 }
 
-.content{
+.section2-content{
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    align-items: center;    
+    /* min-width: 80vw; */
+    scroll-snap-type: x mandatory;
+
 }
 
 .blog-card{
@@ -27,7 +30,6 @@
     margin: 1rem;
     cursor: pointer;
     padding: 1rem;
-    scroll-snap-stop: always;
 }
 
 .blog-card h2{
@@ -55,12 +57,13 @@ picture > img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .icon-stat{
     display: flex;
     align-items: inherit;
+    margin: 0 1rem;
 }
 
 .postreact, .postcomment{
@@ -76,11 +79,23 @@ picture > img{
         font-size: 3rem;
     }
 
-    /* .content{
+    .section2-content{
         overflow-x: scroll;
-    } */
-    .content > a{
+    }
+    .section2-content{
         width: 100%;
-        padding: 2rem;
+    }
+    .blog-card{
+        max-width: 70vw;
+        margin-right: auto;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .text-content{
+        min-height: 20vh;
+    }
+    .post-stats{
+        flex-wrap: wrap;
     }
 }
