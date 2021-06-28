@@ -13,12 +13,16 @@
     "react": "^17.0.1",
     "react-devdotto": "^1.2.9",
     "react-dom": "^17.0.1",
+    "react-flickity-component": "^3.6.1",
     "react-flip-page": "^1.6.4",
     "react-page-scroller": "^2.1.0",
     "react-pageflip": "^2.0.3",
+    "react-responsive-carousel": "^3.2.18",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
+    "react-slick": "^0.28.1",
     "react-spring": "^9.0.0",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

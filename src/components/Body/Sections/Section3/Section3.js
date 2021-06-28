@@ -22,7 +22,7 @@ export default function Section1(){
       }, []);
 
     return (
-        <div className = "section3">
+        <section className = "section3">
             <h2>I track my habits on Notion.</h2>
             {!loading 
             ?
@@ -48,6 +48,6 @@ export default function Section1(){
             </div>
             :
             "Loading..."}
-        </div>
+        </section>
     )
 }

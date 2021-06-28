@@ -13,7 +13,7 @@ export default function Section1() {
     transition: { duration: 1 },
   };
   return (
-    <div className="section1">
+    <section className="section1">
       <div className="side-image-container">
         <img src={sideme} alt="not found!" />
       </div>
@@ -50,6 +50,6 @@ export default function Section1() {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

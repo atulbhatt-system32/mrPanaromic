@@ -31,6 +31,9 @@ a:active{
 
 
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 .App-link {
