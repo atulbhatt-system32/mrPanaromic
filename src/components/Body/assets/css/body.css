@@ -9,6 +9,8 @@
     height: 100vh;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
 }
 
 .body section{
@@ -16,6 +18,23 @@
     scroll-snap-align: start;
     position: relative;
     padding: 2rem;
+    overflow: hidden;
+
+}
+
+
+.body>section ::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+}
+.body>section ::-webkit-scrollbar-track{
+    background: #00000060; /* color of the tracking area */
+}
+.body>section ::-webkit-scrollbar-thumb{
+    background-color: #fff; /* color of the scroll thumb */
+    border-radius: 10px; /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
 }
 
 
@@ -33,10 +52,6 @@
 .text-color-red{
     color:#ea0f1e;
 } 
-
-.side-image-container img{
-    width:50%;
-}
 
 
 @media only screen and (max-width: 768px) {

@@ -15,10 +15,13 @@
 .section4-content{
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;    
     /* min-width: 80vw; */
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: y mandatory;
+    overflow-x: scroll;
+    padding: 5rem 0;
+    overflow-y: hidden;
 
 }
 

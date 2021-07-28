@@ -28,9 +28,9 @@ export default function Section1() {
                   title={blog.title}
                   onClick={() => window.open(blog.canonical_url, "_blank")}
                 >
-                  <picture>
+                  <div className="blog-cover">
                     <img src={blog.cover_image} alt="cover_iamge" />
-                  </picture>
+                  </div>
                   <div class="text-content">
                     <h2>{blog.title}...</h2>
                     <div className="post-stats">
