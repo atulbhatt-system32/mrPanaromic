@@ -39,7 +39,7 @@ export default function Section4() {
                   whileHover={{ scale: 1.2, duration: 1.5 }}
                   className="book-card"
                   title={book.bookTitle}
-                  onClick={() => alert(book?.id)}
+                  onClick={() => window.open(book?.url)}
                 >
                   <picture>
                     <img src={book.cover} alt="cover_iamge" />
