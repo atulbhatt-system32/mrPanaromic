@@ -13,17 +13,28 @@
 
 .bigCard{
     display: flex;
-    justify-content: space-evenly;
-    border:2px solid white;
+    border: 2px solid rgb(250, 217, 155);
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+    overflow-y: auto;
 }
+
 
 .value{
     font-size: 4rem;
 }
 .card-margin{
-    margin:2rem;
+    padding:0 2rem;
+}
+.inner-card{
+    /* display: flex; */
+    align-items: center;
 }
 
+.inner-card:hover{
+    background-color: rgb(0, 0, 0);
+}
 @media only screen and (max-width: 768px),(max-width: 823px) {
     /* For mobile phones: */
 
@@ -31,18 +42,19 @@
         width: unset;
     }
     .section3 > h2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .value{
         font-size: 1rem;
     }
 
     .bigCard{
-        flex-wrap: wrap;
-        flex-direction: column;
+        overflow-y: auto;
+        height: 400px;
     }
 
     .card-margin{
         margin: 1rem;
     }
+
 }

@@ -23,7 +23,8 @@
     overflow-y: auto;
     overflow-x: hidden;
     flex-wrap: wrap;
-
+    height: 70%;
+    margin-bottom: 1rem;
 }
 
 .platform-container{
@@ -34,7 +35,7 @@
     margin: 1rem;
     cursor: pointer;
     padding: 1rem;
-    min-width: 150px;
+    min-width: 250px;
     min-height: 150px;
     
     display: flex;
@@ -75,6 +76,7 @@
     .findme-container{
         width: 100%;
         justify-content: center;
+        height: 350px;
     }
     .book-card{
         max-width: 70vw;
