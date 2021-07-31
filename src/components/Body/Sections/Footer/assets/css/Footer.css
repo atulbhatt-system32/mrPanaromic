@@ -1,29 +1,32 @@
-.section4{
+.footer{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
-    background-color:rgb(5, 27, 46);
+    background-color:rgb(20, 3, 39);
+    align-items: center;
+    
 }
 
-.section4 > h2{
-    font-size: 6rem;
+.footer > h2{
+    font-size: 5rem;
 }
 
-.section4-content{
+.findme-container{
     width: 100%;
+    width: 80%;
     display: flex;
+    justify-content: space-between;
     align-items: center;    
     scroll-snap-type: y mandatory;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    padding: 5rem 0;
-    overflow-y: hidden;
+    padding: 5rem 5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-wrap: wrap;
 
 }
 
-.book-card{
+.platform-container{
     border: 2px solid rgb(253, 190, 190);
     border-radius: 7px;
     margin: 10px 10px;
@@ -31,15 +34,19 @@
     margin: 1rem;
     cursor: pointer;
     padding: 1rem;
-    margin: 0 5rem;
+    min-width: 150px;
+    min-height: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.book-card h2{
-    max-height: 5rem;
-    max-width: 400px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.platform-container:hover{
+    background: rgb(2, 2, 2);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 8px 8px -4px lightblue;
 }
 
 .text-content{
@@ -58,20 +65,16 @@
 
 
 @media only screen and (max-width: 768px),(max-width: 823px) {
-    .section4{
+    .footer{
         flex-direction: column;
     }
-    .section4 > h2{
+    .footer > h2{
         font-size: 3rem;
     }
 
-    .section4-content{
-        overflow-x: auto;
-        overflow-y: hidden;
-    }
-    .section4-content{
+    .findme-container{
         width: 100%;
-        justify-content: unset;
+        justify-content: center;
     }
     .book-card{
         max-width: 70vw;
