@@ -1,0 +1,77 @@
+.section5 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(27, 26, 31);
+}
+
+.section5 > h2 {
+  font-size: 5rem;
+}
+
+.bigCard {
+  display: flex;
+  border: 2px solid rgb(250, 217, 155);
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  overflow-y: auto;
+  background: rgba( 35, 35, 35, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.topTracks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.track {
+  margin: 2rem;
+}
+.value {
+  font-size: 4rem;
+}
+.card-margin {
+  padding: 0 2rem;
+}
+.inner-card {
+  align-items: center;
+}
+
+.inner-card:hover {
+  background-color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 768px), (max-width: 823px) {
+  /* For mobile phones: */
+
+  .content {
+    width: unset;
+  }
+  .section5 > h2 {
+    font-size: 2rem;
+  }
+  .value {
+    font-size: 1rem;
+  }
+
+  .bigCard {
+    overflow-y: auto;
+    height: 400px;
+  }
+
+  .card-margin {
+    margin: 1rem;
+  }
+}

@@ -4,7 +4,9 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  background-color: rgb(5, 27, 46);
+  /* background-color: rgb(5, 27, 46); */
+  background-color: rgb(27, 26, 31);
+  
 }
 
 .section2 > h2 {
@@ -20,6 +22,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: 2rem;
+  
   /* scrollbar-width: none; */
 }
 
@@ -32,6 +35,12 @@
   margin: 1rem;
   cursor: pointer;
   padding: 1rem;
+  background: rgba( 35, 35, 35, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .blog-card h2 {

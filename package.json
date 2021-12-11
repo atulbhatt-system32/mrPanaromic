@@ -25,6 +25,7 @@
     "react-slick": "^0.28.1",
     "react-spring": "^9.0.0",
     "slick-carousel": "^1.8.1",
+    "spotify-web-api-js": "^1.5.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
